@@ -1,0 +1,8 @@
+id;nome_produto;cod_produto;modelo;marca;tipo;qtde_estoque;preco
+1;Câmera profissional;7;GKB 426;Nikon;profissional;10;1779.9
+2;Câmera iniciante;6;GAF 216;Nikon;iniciante;10;979.9
+3;Câmera iniciante;5;MVN 126;Nikon;iniciante;10;979.9
+4;Câmera profissional;4;APL 626;Canon;profissional;10;1779.9
+5;Câmera iniciante;3;JLF 123;Canon;iniciante;10;979.9
+6;Câmera iniciante;2;NAK 119;Sony;iniciante;10;979.9
+7;Câmera profissional;1;MKD 315;Sony;profissional;10;1779.9

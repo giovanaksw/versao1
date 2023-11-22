@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/header_footer.css">
+    <title>Inicio</title>
+</head>
+<body>
+    {{#if log}}
+    <header class="cabecalho">
+        <img src="/img/logo.png" alt="logo" class="logo">
+        <nav>
+            <a href="/">Principal</a>
+            <a href="/cameras">Câmeras</a>
+            <a href="/login">Login</a>
+            <a>Usuário: {{usuario}}</a>
+        </nav>
+        <a href="/carrinho"><img src="/img/carrinho.png" alt="logo" class="carrinho" id="carrinho-icon"></a>
+        
+    </header>
+    <hr>
+    {{else}}
+    <header class="cabecalho">
+        <img src="/img/logo.png" alt="logo" class="logo">
+        <nav>
+            <a href="/">Principal</a>
+            <a href="/cameras">Câmeras</a>
+            <a href="/login">Login</a>
+        </nav>
+        <img src="/img/carrinho.png" alt="logo" class="carrinho" id="carrinho-icon">
+    </header>
+    <hr>
+    {{/if}} 
+    {{{body}}}
+    <footer></footer>
+</body>
+</html>

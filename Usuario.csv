@@ -1,0 +1,8 @@
+id;nome;sobrenome;email;telefone;cpf;senha;tipo
+1;Giovana;Koslowski;giksw@gmail.com;99887766;12345678910;123;Adm
+2;Guilherme;Fortes;guif@gmail.com;88776655;12345678911;123;Adm
+3;Miguel;Voltolini;migv@gmail.com;77665544;12345678912;123;Cliente
+4;Arthur;Pimentel;artp@gmail.com;66554433;12345678913;123;Cliente
+5;Julia;França;julf@gmail.com;55443322;12345678914;123;Cliente
+6;Neliana;Azambuja;nelia@gmail.com;44332211;12345678915;123;Adm
+7;Mariana;Duz;makd@gmail.com;33221100;12345678916;123;Cliente
