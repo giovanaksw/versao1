@@ -1,0 +1,59 @@
+<br>
+<nav>
+    <a href="/cadastrar_produto">Cadastrar produto</a>&emsp;
+    <a href="/listar_produto">Listar produto</a>&emsp;
+    <a href="/editar_produto">Editar produto</a>&emsp;
+    <a href="/excluir_produto">Excluir produto</a>
+</nav>
+<br><br>
+<form action="/cadastrar_produto" method="post">
+    <label for="nome_produto">Nome do produto:</label><br>
+    <input type="text" name="nome_produto" placeholder="Nome do produto">
+    <br>
+    <label for="cod_produto">Código do produto:</label><br>
+    <input type="text" name="cod_produto" placeholder="Código do produto">
+    <br>
+    <label for="modelo">Modelo do produto:</label><br>
+    <input type="text" name="modelo" placeholder="Modelo do produto">
+    <br>
+    <label for="marca">Marca do produto:</label><br>
+    <input type="text" name="marca" placeholder="Marca do produto">
+    <br>
+    <label for="tipo">Tipo do produto:</label><br>
+    <input type="text" name="tipo" placeholder="Profissional ou iniciante">
+    <br>
+    <label for="qtde_estoque">Quantidade em estoque do produto:</label><br>
+    <input type="text" name="qtde_estoque" placeholder="Quantidade em estoque">
+    <br>
+    <label for="preco">Preço do produto:</label><br>
+    <input type="text" name="preco" placeholder="Preco do produto"><br>
+    <br><br>
+    <button type="submit">Enviar</button>
+    <br><br>
+<form action="/cadastrar_produto" method="post">
+    <label for="novo_nome_produto">Novo nome do produto:</label><br>
+    <input type="text" name="novo_nome_produto" placeholder="Nome do produto">
+    <br>
+    <label for="cod_produto">Código do produto:</label><br>
+    <input type="text" name="cod_produto" placeholder="Código do produto">
+    <br>
+    <label for="modelo">Modelo do produto:</label><br>
+    <input type="text" name="modelo" placeholder="Modelo do produto">
+    <br>
+    <label for="marca">Marca do produto:</label><br>
+    <input type="text" name="marca" placeholder="Marca do produto">
+    <br>
+    <label for="tipo">Tipo do produto:</label><br>
+    <input type="text" name="tipo" placeholder="Profissional ou iniciante">
+    <br>
+    <label for="qtde_estoque">Quantidade em estoque do produto:</label><br>
+    <input type="text" name="qtde_estoque" placeholder="Quantidade em estoque">
+    <br>
+    <label for="preco">Preço do produto:</label><br>
+    <input type="text" name="preco" placeholder="Preco do produto"><br>
+    <br><br>
+    <button type="submit">Enviar</button>
+</form>
+{{#if msg}}
+    <p>{{msg}}</p>
+{{/if}} 

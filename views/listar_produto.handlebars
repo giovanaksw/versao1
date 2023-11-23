@@ -1,0 +1,34 @@
+<br>
+<nav>
+    <a href="/cadastrar_produto">Cadastrar produto</a>&emsp;
+    <a href="/listar_produto">Listar produto</a>&emsp;
+    <a href="/editar_produto">Editar produto</a>&emsp;
+    <a href="/excluir_produto">Excluir produto</a>
+</nav>
+<br>
+<h1>Lista dos produtos cadastrados</h1>
+<br>
+<table>
+    <thead>
+        <th>Nome</th>
+        <th>Código</th>
+        <th>Modelo</th>
+        <th>Marca</th>
+        <th>Tipo</th>
+        <th>Quantidade em estoque</th>
+        <th>Preço R$</th>
+    </thead>
+    <tbody>
+    {{#each valores}}
+        <tr>
+            <td>{{this.nome_produto}}</td>
+            <td>{{this.cod_produto}}</td>
+            <td>{{this.modelo}}</td>
+            <td>{{this.marca}}</td>
+            <td>{{this.tipo}}</td>
+            <td>{{this.qtde_estoque}}</td>
+            <td>{{this.preco}}</td>
+        </tr>
+    {{/each}} 
+    </tbody>
+</table>
