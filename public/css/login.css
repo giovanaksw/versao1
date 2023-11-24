@@ -1,0 +1,48 @@
+main {
+    max-width: 600px;
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+main h1, main h2 {
+    color: black; 
+    text-align: center; 
+}
+
+main form {
+    display: flex; 
+    flex-direction: column; 
+    margin-top: 20px;
+}
+
+main form label {
+    margin-top: 10px; 
+    color: gainsboro; 
+}
+main form input {
+    width: 100%; 
+    padding: 8px;
+    margin-top: 5px; 
+    box-sizing: border-box; 
+}
+
+main form button {
+    background-color: #4CAF50; 
+    color: #fff; 
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+nav a {
+    color: black; 
+    text-decoration: none; 
+    margin-right: 15px; 
+}
+main p {
+    color: gainsboro;
+    text-align: center; 
+}

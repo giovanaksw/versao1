@@ -18,7 +18,7 @@ const Usuario = db.define('usuario',{
         type: DataTypes.STRING(20)
     },
     senha: {
-        type: DataTypes.STRING(50) 
+        type: DataTypes.STRING(255) 
     },
     tipo:{
         type: DataTypes.STRING(30) // cliente e admin

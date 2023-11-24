@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="/css/excluir.css">
+
+<h1>Excluir Produto</h1>
+
+    <form action="/excluir_produto" method="post">
+        <div class="config-container">
+                <h3>Informações do Produto</h3>
+                <br>
+                <label for="nome_produto">Insira o nome do produto que você deseja atualizar</label><br>
+                <input type="text" name="nome_produto" placeholder="Insira o nome do Produto que você deseja atualizar">
+                <br>
+                <label for="cod_produto">Insira o código do produto que você deseja atualizar</label><br>
+                <input type="text" name="cod_produto" placeholder="Insira o código do Produto que você deseja atualizar">
+                <br>
+                <label for="modelo">Insira o modelo do produto que você deseja atualizar</label><br>
+                <input type="text" name="modelo" placeholder="Insira o modelo do produto que você deseja atualizar">
+                <br>
+                <label for="marca">Insira a Marca do produto que você deseja atualizar</label><br>
+                <input type="text" name="marca" placeholder="Insira a marca do produto que você deseja atualizar">
+                <br>
+                <label for="tipo">Insira o tipo do produto que você deseja atualizar</label><br>
+                <input type="text" name="tipo" placeholder="Insira o tipo do produto que você deseja atualizar">
+                <br>
+                <label for="qtde_estoque">Insira a quantidade em estoque do Produto que você deseja atualizar</label><br>
+                <input type="text" name="qtde_estoque" placeholder="Insira a quantidade em estoque do Produto que você deseja atualizar">
+                <br>
+                <label for="preco">Insira o preco do produto que você deseja atualizar</label><br>
+                <input type="text" name="preco" placeholder="Insira o preco do produto que você deseja atualizar"><br>
+    <br><br>
+        </div>
+        {{#if msg}}
+            <p>{{msg}}</p>
+        {{else}}
+            <p>{{msg2}}</p>
+        {{/if}}
+
+        <button id="excluir" type="submit">Excluir</button>
+    </form>

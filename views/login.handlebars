@@ -1,17 +1,67 @@
-<link rel="stylesheet" href="/css/login.css">
-<h1>Login</h1>
-<form action="/login" method="post">
-    <label for="email">Email:</label><br>
-    <input type="text" name="email"><br>
-    <label for="senha">Senha:</label><br>
-    <input type="password" name="senha"><br>
-    <br><br>
-    <button type="submit">Enviar</button>
-    <br>
-</form>
-<br>
-<h2> </h2>
-<br><br>
-{{#if msg}}
-    <p>{{msg}}</p>
-{{/if}} 
+<link rel="stylesheet" href="css/login.css">
+{{#if log}}
+    {{#if adm}}
+        <main>
+        <h1>Login</h1>
+    </main>
+    {{else}}
+    <main>
+        <h2>Conta:</h2>
+            {{#if valores}}
+            <form action="/login" method="post">
+                <label for="email">Email:</label><br>
+                <input type="text" name="email"><br>
+                <label for="senha">Senha:</label><br>
+                <input type="password" name="senha"><br>
+                <br><br>
+                <button type="submit">Enviar</button>
+                <br>
+            </form>
+            {{/if}}
+
+            <nav>
+                <a href="/logout">Sair da conta</a>
+            </nav>
+
+    </main>
+    {{/if}}
+{{else}}
+    <main>
+        <h1>Login</h1>
+
+        <form action="/login" method="post">
+        <input type="email" name="email" placeholder="Digite seu email"><br>
+        <input type="password" name="senha" placeholder="Digite sua senha"><br>
+        <br>
+        <button class="log" type="submit">Entrar</button>
+        </form>
+    </main>
+    <main>
+        <h1>Não tem cadastro? Cadastre-se:</h1>
+
+        <form action="/cadastrar_usuario" method="post">
+        {{!-- <label for="nome">Digite seu Nome</label> --}}
+        <input type="text" name="nome" placeholder="Digite seu Nome"><br>
+        {{!-- <label for="sobrenome">Digite seu Sobrenome</label> --}}
+        <input type="text" name="sobrenome" placeholder="Digite seu Sobrenome"><br>
+        {{!-- <label for="cpf">Digite seu cpf</label> --}}
+        <input type="text" name="cpf" placeholder="Digite seu cpf"><br>
+        {{!-- <label for="telefone">Digite seu telefone</label> --}}
+        <input type="text" name="telefone" placeholder="Digite seu telefone"><br>
+        {{!-- <label for="email">Digite seu email</label> --}}
+        <input type="email" name="email" placeholder="Digite seu email"><br>
+        {{!-- <label for="senha">Digite sua senha</label> --}}
+        <input type="password" name="senha" placeholder="Digite sua senha"><br>
+        <br>
+
+        <button class="log" type="submit">Cadastrar</button>
+        {{#if msg}}
+            <p>{{msg}}</p>
+        {{else}}
+            <p>{{msg2}}</p>
+        {{/if}}
+        </form>
+    </main>
+{{/if}}
+
+

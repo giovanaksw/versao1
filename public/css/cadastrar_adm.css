@@ -1,0 +1,39 @@
+h1 {
+    color: black; 
+    text-align: center; 
+}
+
+form {
+    max-width: 400px; 
+    margin: 0 auto;
+}
+
+form label {
+    display: block; 
+    margin-top: 10px; 
+}
+
+form input {
+    width: 100%; 
+    padding: 8px; 
+    margin-top: 5px; 
+    box-sizing: border-box; 
+}
+
+form button {
+    background-color: #4CAF50; 
+    color: black; 
+    padding: 10px 15px; 
+    border: none; 
+    cursor: pointer; 
+    display: block; 
+    margin-top: 15px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+form p {
+    color: black; 
+    text-align: center; 
+    margin-top: 15px;
+}

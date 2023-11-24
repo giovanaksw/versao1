@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="/css/cadastrar_usuario.css">
+
+<h1>Cadastrar Cliente</h1>
+<br>
+
+<form action="/cadastrar_usurio" method="post">
+    {{!-- <label for="nome">Digite seu Nome</label> --}}
+    <input type="text" name="nome" placeholder="Digite seu Nome"><br>
+    <br>
+    {{!-- <label for="sobrenome">Digite seu Sobrenome</label> --}}
+    <input type="text" name="sobrenome" placeholder="Digite seu Sobrenome"><br>
+    <br>
+    {{!-- <label for="telefone">Digite seu telefone</label> --}}
+    <input type="text" name="telefone" placeholder="Digite seu telefone"><br>
+    <br>
+    {{!-- <label for="cpf">Digite seu cpf</label> --}}
+    <input type="text" name="cpf" placeholder="Digite seu cpf"><br>
+    <br>
+    {{!-- <label for="email">Digite seu email</label> --}}
+    <input type="email" name="email" placeholder="Digite seu email"><br>
+    <br>
+    {{!-- <label for="senha">Digite sua senha</label> --}}
+    <input type="password" name="senha" placeholder="Digite sua senha"><br>
+    <br>
+    <button type="submit">Cadastrar</button>
+    {{#if msg}}
+    <p>{{msg}}</p>
+    {{/if}}
+    </form>

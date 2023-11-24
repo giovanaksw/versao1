@@ -7,3 +7,23 @@ img.carrinho{
 img.carrinho_cheio{
     height: 10vh;
 }
+
+.cabecalho {
+    background-color: gainsboro; 
+    padding: 10px; 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+}
+
+
+nav {
+    display: flex; 
+}
+
+nav a {
+    color: black; 
+    text-decoration: none; 
+    margin-right: 15px;
+}
+
